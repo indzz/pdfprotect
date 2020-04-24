@@ -44,7 +44,21 @@ apt-get install -y qpdf
 If you are using other Linux distribution, please refer to the corresponding package repository. 
 
 ## Example
-See `example` folder
+The simplest usage is:
+```php
+<?php
+use INDZZ\PdfProtector\PdfProtector;
+
+PdfProtector::create('fpdi')
+    ->source(__DIR__.'/input/1.pdf')
+    ->protect('userPw', 'ownerPw')
+    ->output();
+```
+
+See `example` folder for more details
+* Directly output to web browser - [1-output.pdf](./example/1-output.php)
+* Save to a path on the server-side - [2-save.pdf](./example/2-save.php)
+* Return a Symfony HTTP Foundation Response object - [3-response.pdf](./example/3-response.php)
 
 # License
 This library is open-sourced under [the MIT license](LICENSE.md).
