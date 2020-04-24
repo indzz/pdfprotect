@@ -1,5 +1,5 @@
 # PDF Protection
-This library was developed to add password encryption to an existing PDF file.
+This is a PHP wrapper library to add password encryption to an existing PDF file.
 
 ## Driver 1 - FPDI
 The first solution requires PHP only. 
