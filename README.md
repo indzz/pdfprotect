@@ -47,7 +47,7 @@ If you are using other Linux distribution, please refer to the corresponding pac
 See `example` folder
 
 # License
-This library is open-sourced under the MIT license.
+This library is open-sourced under [the MIT license](LICENSE.md).
 
 Please also refer to the license of the 
 * FPDI: https://github.com/Setasign/FPDI/blob/master/LICENSE.txt
