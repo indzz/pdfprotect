@@ -12,6 +12,16 @@ Advantage:
 Disadvantage:
 * PDF version 1.5 or above is not supported, due to the limitation of the free PDF parser
 
+Please be reminded to add the following packages to composer.json before you use this driver:
+```json
+{
+  "require": {
+    "setasign/fpdi": "^2.0",
+    "tecnickcom/tcpdf": "6.3.*"  
+  }
+}
+```
+
 ## Driver 2 - QPDF
 The second solution uses QPDF, which is a command line program. The solution simply calls `shell_exec` to execute QPDF and add the password.
 
@@ -35,3 +45,11 @@ If you are using other Linux distribution, please refer to the corresponding pac
 
 ## Example
 See `example` folder
+
+# License
+This library is open-sourced under the MIT license.
+
+Please also refer to the license of the 
+* FPDI: https://github.com/Setasign/FPDI/blob/master/LICENSE.txt
+* TCPDF: https://github.com/tecnickcom/TCPDF/blob/master/LICENSE.TXT
+* QPDF: https://github.com/qpdf/qpdf#copyright-license

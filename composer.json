@@ -2,6 +2,8 @@
     "name": "indzz/pdfprotect",
     "description": "A library to add password protection to an existing PDF file",
     "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
     "suggest": {
         "setasign/fpdi": "Required if you use fpdi driver",
         "tecnickcom/tcpdf": "Required if you use fpdi driver"
