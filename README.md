@@ -1,11 +1,7 @@
 # PDF Protection
-One of the requirements of the project is to add a password protection to the uploaded file. The workflow is:
-1. CMS user uploads a PDF file in the CMS
-2. When a visitor clicks the download button, he/she will be asked to set a password to the file
-3. The system runs the script to add password encryption to the PDF
-4. The system returns the encrypted file to the browser
+This library was developed to add password encryption to an existing PDF file.
 
-## Solution 1
+## Driver 1 - FPDI
 The first solution requires PHP only. 
 
 It uses FPDI to import all pages of the source PDF and add each page to a new file. Then, it outputs the file binary as a response.
@@ -15,8 +11,8 @@ Advantage:
 
 Disadvantage:
 * PDF version 1.5 or above is not supported, due to the limitation of the free PDF parser
-  
-## Solution 2
+
+## Driver 2 - QPDF
 The second solution uses QPDF, which is a command line program. The solution simply calls `shell_exec` to execute QPDF and add the password.
 
 Advantage:
@@ -25,3 +21,17 @@ Advantage:
 
 Disadvantage:
 * Requires extra library installed on the system
+
+For macOS, you may install QPDF with Homebrew:
+```bash
+brew install qpdf
+```
+
+For Ubuntu, you may install with apt:
+```bash
+apt-get install -y qpdf
+```
+If you are using other Linux distribution, please refer to the corresponding package repository. 
+
+## Example
+See `example` folder

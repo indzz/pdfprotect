@@ -1,9 +1,23 @@
 {
     "name": "indzz/pdfprotect",
-    "type": "project",
+    "description": "A library to add password protection to an existing PDF file",
+    "type": "library",
+    "suggest": {
+        "setasign/fpdi": "Required if you use fpdi driver",
+        "tecnickcom/tcpdf": "Required if you use fpdi driver"
+    },
+    "autoload": {
+        "psr-4": {
+            "INDZZ\\PdfProtector\\": "src/"
+        }
+    },
     "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
         "setasign/fpdi": "^2.0",
-        "tecnickcom/tcpdf": "6.3.*"
+        "tecnickcom/tcpdf": "6.3.*",
+        "symfony/http-foundation": "*"
     },
     "authors": [
         {
