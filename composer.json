@@ -1,0 +1,14 @@
+{
+    "name": "indzz/pdfprotect",
+    "type": "project",
+    "require": {
+        "setasign/fpdi": "^2.0",
+        "tecnickcom/tcpdf": "6.3.*"
+    },
+    "authors": [
+        {
+            "name": "Tat",
+            "email": "tat@indzz.com"
+        }
+    ]
+}
